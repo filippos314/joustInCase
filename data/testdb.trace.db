@@ -1,0 +1,6 @@
+2022-03-14 14:29:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "JOUSTERS" not found; SQL statement:
+SELECT * FROM Jousters [42102-200]
+2022-03-14 14:29:02 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "JOUSTER" not found; SQL statement:
+SELECT * FROM Jouster [42102-200]
