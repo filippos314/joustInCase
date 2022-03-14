@@ -12,4 +12,20 @@ class JousterService(
     fun getAllJousters(): List<Jouster> {
         return jousterRepository.findAll()
     }
+
+    fun saveJouster(newJousterName: String): Jouster {
+        val newJouster = Jouster(newJousterName)
+        return jousterRepository.save(newJouster)
+    }
+
+    fun deleteJouster(id: Long) {
+        return jousterRepository.deleteById(id)
+    }
+
+    fun updateJouster(newJouster: Jouster): Jouster? {
+        TODO("Not yet implemented")
+    }
+
+//    fun calculateJousterScore()
+
 }
